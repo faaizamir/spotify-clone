@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(14 3 43);
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    color: white;
+    background-color: black;
+    list-style: none;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.brand img{
+    width: 45px;
+}
+ul li{
+    font-size: bold;
+    padding: 0px 12px;
+}
+.container{
+    background-color: rgba(133, 3, 138, 0.472);
+    color: white;
+    display: flex;
+    min-height: 70vh;
+    font-family: 'Varela Round', sans-serif;
+    margin: 4vh auto;
+    width: 70vw;
+    border-radius: 10px;
+    padding: 20px;
+    background-image: url('bg.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.bottom{
+    width: 100vw;
+    background-color: black;
+    position: sticky;
+    height: 12vh;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+.icons{
+    margin-top: 13px;
+}
+.icons i{
+    padding: 0px 4px;
+    cursor: pointer;
+}
+
+
+#myProgressBar{
+    cursor: pointer;
+    width: 72.8vw;
+    text-align: center;
+}
+
+.songItem{
+    border-radius: 350px;
+    background-color: rgba(255, 255, 255, 0.182);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem;
+    width: 70vh;
+    margin: 12px 0px;
+}
+.songItem img{
+    width: 2.5rem;
+}
+
+.timestamp, .songListPlay i{
+    padding: 0px 15px;
+}
+.songListPlay i{
+    cursor: pointer;
+}
+#eight{
+    height: 2.5rem;
+}
+.songinfo{
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    left: 13.6vw;
+    top: 6vh;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: 80vw;
+    }
+    .songItem{
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 500px){
+    .container h1{
+        font-size: 20px;
+    }
+    .icons{
+        margin-left: 50vw;
+    }
+    
+}
